@@ -8,8 +8,12 @@
 }
 
 :root{
-    --color-back-1:bisque;
+    --color-back-1:rgb(255, 228, 196);
+    --color-enfasis:brown;
     --width-content: 1200px;
+}
+html{
+    scroll-behavior: smooth;
 }
 body{
     background-image:url(img/background.png);
@@ -41,6 +45,7 @@ nav{
     position: sticky;
     top: 0;
     background-color: var(--color-back-1);
+    z-index: 2;
 }
 .nav-ul{
     display: flex;
@@ -55,18 +60,65 @@ nav{
     padding: 10px;
 }
 .nav-ul > li:hover{
-    background-color: blue;
+    background-color: brown;
+    border-radius: 50%;
 }
 .nav-ul > li > a{
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
 }
-h2{
+h2, h3{
     font-family: Amita, serif;
     text-align: center;
+}
+h2{
     font-size: 2.5rem;
+    position: relative;
+    top: 60px;
+    margin-bottom: 60px;
+}
+h3{
+    font-size: 2rem;
+}
+article p{
+    font-size: 20px;
+    text-align: justify;
+}
+#destinos > div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+article{
+    max-width: 50%;
+    padding: 5px;
+    border: 20px solid transparent;
+}
+article:hover{
+    border:20px solid var(--color-back-1);
+}
+article img{
+    width: 100%;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+.iconos{
+    max-width: 30%;
+    padding: 5px;
     padding-top: 50px;
+}
+.iconos img{
+    width: 60%;
+}
+.iconos > p{
+    padding-top: 20px;
+    text-align: justify;
 }
 footer{
     background-color: var(--color-back-1);
